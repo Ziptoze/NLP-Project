@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+service Text2ImageService {
+  rpc GenerateImage (TextPrompt) returns (ImageResponse);
+}
+
+message TextPrompt {
+  string prompt = 1;
+  string context = 2;
+  int32 num_inference_steps = 3;
+  float guidance_scale = 4;
+}
+
+message ImageResponse {
+  string image_path = 1;
+}
