@@ -20,6 +20,25 @@ This project implements a complete server-client pipeline for **Text-to-Image** 
 
 ---
 
+## 🖋️ Functionalities
+- 🔡 Text2Image
+Generate images from text prompts using Stable Diffusion's Realistic Vision v5.1 model
+
+Adjustable parameters: guidance scale, seed, steps, etc.
+
+- 🖼️ Image2Image
+Modify images with prompt guidance using img2img pipeline of Stable Diffusion's Realistic Vision v5.1 model.
+
+Tune strength, noise level, etc.
+
+- 🎤 Speech2Text
+Upload or record audio
+
+Transcribe to text using Whisper model from OpenAI
+
+- 🌍 Image Translation
+Translate multilingual text in images using Seamless M4T
+
 ## 🔧 Setup Instructions
 
 ### 1. Clone the Repository
@@ -81,11 +100,11 @@ This launches a web UI to send requests and view results.
 
 ---
 
-## 🖋️ Functionalities
 
 ### 🔡 Text2Image
 
 - Prompt-based generation
+- Audio prompt also available
 - Optional parameters like `guidance_scale`, `steps`, `seed`, etc.
 - Implemented in `server.py` and triggered from `streamlit_app.py`
 
@@ -187,12 +206,7 @@ For bugs, issues, or suggestions, open an issue or email `your.email@example.com
 ---
 
 ## 🖼️ Preview
-
-![Example UI Screenshot](https://yourimagehost.com/sample_ui.png)  
-*Text prompt: "A futuristic city skyline at sunset"*
+ 
+*For preview: Check out the Outputs folder*
 
 ---
-
-## 📜 License
-
-MIT License. See `LICENSE` for details.
