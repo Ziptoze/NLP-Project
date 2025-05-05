@@ -1,0 +1,160 @@
+{
+    "info": {
+        "name": "gRPC Text2Image Response Examples",
+        "_postman_id": "example-id",
+        "description": "Sample response examples for stylized image generation via gRPC.",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Test Response 1",
+            "response": [
+                {
+                    "name": "Example 1",
+                    "originalRequest": {},
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [],
+                    "cookie": [],
+                    "body": "{\n    \"image_path\": \"outputs\\\\stylized_20250504_234211.png\"\n}"
+                }
+            ]
+        },
+        {
+            "name": "Test Response 2",
+            "response": [
+                {
+                    "name": "Example 2",
+                    "originalRequest": {},
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [],
+                    "cookie": [],
+                    "body": "{\n    \"image_path\": \"outputs\\\\stylized_20250505_161300.png\"\n}"
+                }
+            ]
+        },
+        {
+            "name": "Test Response 3",
+            "response": [
+                {
+                    "name": "Example 3",
+                    "originalRequest": {},
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [],
+                    "cookie": [],
+                    "body": "{\n    \"image_path\": \"outputs\\\\stylized_20250505_162123.png\"\n}"
+                }
+            ]
+        },
+        {
+            "name": "Test Response 4",
+            "response": [
+                {
+                    "name": "Example 4",
+                    "originalRequest": {},
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [],
+                    "cookie": [],
+                    "body": "{\n    \"image_path\": \"outputs\\\\stylized_20250505_163139.png\"\n}"
+                }
+            ]
+        },
+        {
+            "name": "Test Response 5",
+            "response": [
+                {
+                    "name": "Example 5",
+                    "originalRequest": {},
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [],
+                    "cookie": [],
+                    "body": "{\n    \"image_path\": \"outputs\\\\stylized_20250505_164143.png\"\n}"
+                }
+            ]
+        },
+        {
+            "name": "Test Response 6",
+            "response": [
+                {
+                    "name": "Example 6",
+                    "originalRequest": {},
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [],
+                    "cookie": [],
+                    "body": "{\n    \"image_path\": \"outputs\\\\stylized_20250505_165533.png\"\n}"
+                }
+            ]
+        },
+        {
+            "name": "Test Response 7",
+            "response": [
+                {
+                    "name": "Example 7",
+                    "originalRequest": {},
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [],
+                    "cookie": [],
+                    "body": "{\n    \"image_path\": \"outputs\\\\stylized_20250505_170531.png\"\n}"
+                }
+            ]
+        },
+        {
+            "name": "Test Response 8",
+            "response": [
+                {
+                    "name": "Example 8",
+                    "originalRequest": {},
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [],
+                    "cookie": [],
+                    "body": "{\n    \"image_path\": \"outputs\\\\stylized_20250505_172007.png\"\n}"
+                }
+            ]
+        },
+        {
+            "name": "Test Response 9",
+            "response": [
+                {
+                    "name": "Example 9",
+                    "originalRequest": {},
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [],
+                    "cookie": [],
+                    "body": "{\n    \"image_path\": \"outputs\\\\stylized_20250505_172826.png\"\n}"
+                }
+            ]
+        },
+        {
+            "name": "Test Response 10",
+            "response": [
+                {
+                    "name": "Example 10",
+                    "originalRequest": {},
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [],
+                    "cookie": [],
+                    "body": "{\n    \"image_path\": \"outputs\\\\stylized_20250505_174125.png\"\n}"
+                }
+            ]
+        }
+    ]
+}

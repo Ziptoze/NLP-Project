@@ -24,17 +24,19 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x10text2image.proto\"b\n\nTextPrompt\x12\x0e\n\x06prompt\x18\x01 \x01(\t\x12\x0f\n\x07\x63ontext\x18\x02 \x01(\t\x12\x1b\n\x13num_inference_steps\x18\x03 \x01(\x05\x12\x16\n\x0eguidance_scale\x18\x04 \x01(\x02\"#\n\rImageResponse\x12\x12\n\nimage_path\x18\x01 \x01(\t2A\n\x11Text2ImageService\x12,\n\rGenerateImage\x12\x0b.TextPrompt\x1a\x0e.ImageResponseb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x10text2image.proto\x12\ntext2image\"b\n\nTextPrompt\x12\x0e\n\x06prompt\x18\x01 \x01(\t\x12\x0f\n\x07\x63ontext\x18\x02 \x01(\t\x12\x1b\n\x13num_inference_steps\x18\x03 \x01(\x05\x12\x16\n\x0eguidance_scale\x18\x04 \x01(\x02\"\x93\x01\n\x12ImageToImagePrompt\x12\x17\n\x0finit_image_path\x18\x01 \x01(\t\x12\x0e\n\x06prompt\x18\x02 \x01(\t\x12\r\n\x05style\x18\x03 \x01(\t\x12\x1b\n\x13num_inference_steps\x18\x04 \x01(\x05\x12\x16\n\x0eguidance_scale\x18\x05 \x01(\x02\x12\x10\n\x08strength\x18\x06 \x01(\x02\"#\n\rImageResponse\x12\x12\n\nimage_path\x18\x01 \x01(\t2\xac\x01\n\x11Text2ImageService\x12\x42\n\rGenerateImage\x12\x16.text2image.TextPrompt\x1a\x19.text2image.ImageResponse\x12S\n\x16GenerateImageFromImage\x12\x1e.text2image.ImageToImagePrompt\x1a\x19.text2image.ImageResponseb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'text2image_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
   DESCRIPTOR._loaded_options = None
-  _globals['_TEXTPROMPT']._serialized_start=20
-  _globals['_TEXTPROMPT']._serialized_end=118
-  _globals['_IMAGERESPONSE']._serialized_start=120
-  _globals['_IMAGERESPONSE']._serialized_end=155
-  _globals['_TEXT2IMAGESERVICE']._serialized_start=157
-  _globals['_TEXT2IMAGESERVICE']._serialized_end=222
+  _globals['_TEXTPROMPT']._serialized_start=32
+  _globals['_TEXTPROMPT']._serialized_end=130
+  _globals['_IMAGETOIMAGEPROMPT']._serialized_start=133
+  _globals['_IMAGETOIMAGEPROMPT']._serialized_end=280
+  _globals['_IMAGERESPONSE']._serialized_start=282
+  _globals['_IMAGERESPONSE']._serialized_end=317
+  _globals['_TEXT2IMAGESERVICE']._serialized_start=320
+  _globals['_TEXT2IMAGESERVICE']._serialized_end=492
 # @@protoc_insertion_point(module_scope)

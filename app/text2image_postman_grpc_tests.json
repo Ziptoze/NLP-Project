@@ -1,0 +1,206 @@
+{
+  "info": {
+    "name": "Text2Image gRPC Tests",
+    "_postman_id": "text2image-20250505070635",
+    "description": "Test cases for the Text2ImageService gRPC methods",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Cyberpunk Scene",
+      "protocolProfileBehavior": {},
+      "request": {
+        "method": "GRPC",
+        "url": {
+          "raw": "grpc://localhost:8501/text2image.Text2ImageService/GenerateImage",
+          "host": [
+            "localhost:8501"
+          ],
+          "path": [
+            "text2image.Text2ImageService",
+            "GenerateImage"
+          ]
+        },
+        "body": {
+          "mode": "grpc",
+          "grpc": {
+            "message": {
+              "prompt": "a futuristic city with flying cars",
+              "context": "sunset, neon lights, sci-fi",
+              "num_inference_steps": 30,
+              "guidance_scale": 8.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Natural Landscape",
+      "protocolProfileBehavior": {},
+      "request": {
+        "method": "GRPC",
+        "url": {
+          "raw": "grpc://localhost:8501/text2image.Text2ImageService/GenerateImage",
+          "host": [
+            "localhost:8501"
+          ],
+          "path": [
+            "text2image.Text2ImageService",
+            "GenerateImage"
+          ]
+        },
+        "body": {
+          "mode": "grpc",
+          "grpc": {
+            "message": {
+              "prompt": "a peaceful forest with a waterfall",
+              "context": "morning mist, birds, calm atmosphere",
+              "num_inference_steps": 40,
+              "guidance_scale": 7.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Fantasy Creature",
+      "protocolProfileBehavior": {},
+      "request": {
+        "method": "GRPC",
+        "url": {
+          "raw": "grpc://localhost:8501/text2image.Text2ImageService/GenerateImage",
+          "host": [
+            "localhost:8501"
+          ],
+          "path": [
+            "text2image.Text2ImageService",
+            "GenerateImage"
+          ]
+        },
+        "body": {
+          "mode": "grpc",
+          "grpc": {
+            "message": {
+              "prompt": "a dragon flying over mountains",
+              "context": "sunset, fantasy, clouds",
+              "num_inference_steps": 35,
+              "guidance_scale": 8.5
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Abstract Art",
+      "protocolProfileBehavior": {},
+      "request": {
+        "method": "GRPC",
+        "url": {
+          "raw": "grpc://localhost:8501/text2image.Text2ImageService/GenerateImage",
+          "host": [
+            "localhost:8501"
+          ],
+          "path": [
+            "text2image.Text2ImageService",
+            "GenerateImage"
+          ]
+        },
+        "body": {
+          "mode": "grpc",
+          "grpc": {
+            "message": {
+              "prompt": "an abstract explosion of colors",
+              "context": "modern art, chaotic, surreal",
+              "num_inference_steps": 25,
+              "guidance_scale": 10.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Realistic Portrait",
+      "protocolProfileBehavior": {},
+      "request": {
+        "method": "GRPC",
+        "url": {
+          "raw": "grpc://localhost:8501/text2image.Text2ImageService/GenerateImage",
+          "host": [
+            "localhost:8501"
+          ],
+          "path": [
+            "text2image.Text2ImageService",
+            "GenerateImage"
+          ]
+        },
+        "body": {
+          "mode": "grpc",
+          "grpc": {
+            "message": {
+              "prompt": "a close-up portrait of a woman",
+              "context": "realistic lighting, bokeh background",
+              "num_inference_steps": 50,
+              "guidance_scale": 6.5
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Low Steps Edge Case",
+      "protocolProfileBehavior": {},
+      "request": {
+        "method": "GRPC",
+        "url": {
+          "raw": "grpc://localhost:8501/text2image.Text2ImageService/GenerateImage",
+          "host": [
+            "localhost:8501"
+          ],
+          "path": [
+            "text2image.Text2ImageService",
+            "GenerateImage"
+          ]
+        },
+        "body": {
+          "mode": "grpc",
+          "grpc": {
+            "message": {
+              "prompt": "a night sky with stars and a moon",
+              "context": "minimalist, dark palette",
+              "num_inference_steps": 5,
+              "guidance_scale": 7.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "High Guidance Scale",
+      "protocolProfileBehavior": {},
+      "request": {
+        "method": "GRPC",
+        "url": {
+          "raw": "grpc://localhost:8501/text2image.Text2ImageService/GenerateImage",
+          "host": [
+            "localhost:8501"
+          ],
+          "path": [
+            "text2image.Text2ImageService",
+            "GenerateImage"
+          ]
+        },
+        "body": {
+          "mode": "grpc",
+          "grpc": {
+            "message": {
+              "prompt": "a cozy wooden cabin in the snow",
+              "context": "winter, pine trees, warm lights",
+              "num_inference_steps": 40,
+              "guidance_scale": 15.0
+            }
+          }
+        }
+      }
+    }
+  ]
+}

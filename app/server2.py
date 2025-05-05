@@ -36,11 +36,11 @@ class Text2ImageService(pb2_grpc.Text2ImageServiceServicer):
             return pb2.ImageResponse()
 
 async def serve():
-    server = grpc.aio.server()
+    server = grpc.aio.server(futures.ThreadPoolExecutor(max_workers=10))
     pb2_grpc.add_Text2ImageServiceServicer_to_server(Text2ImageService(), server)
-    server.add_insecure_port('[::]:50051')
+    server.add_insecure_port('127.0.0.1:8501')
     await server.start()
-    print("gRPC server started at port 50051")
+    print("gRPC server started at port 127.0.0.1:8501")
     await server.wait_for_termination()
 
 if __name__ == "__main__":
