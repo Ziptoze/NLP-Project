@@ -1,206 +1,129 @@
 {
-  "info": {
-    "name": "Text2Image gRPC Tests",
-    "_postman_id": "text2image-20250505070635",
-    "description": "Test cases for the Text2ImageService gRPC methods",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-  },
-  "item": [
-    {
-      "name": "Cyberpunk Scene",
-      "protocolProfileBehavior": {},
-      "request": {
-        "method": "GRPC",
-        "url": {
-          "raw": "grpc://localhost:8501/text2image.Text2ImageService/GenerateImage",
-          "host": [
-            "localhost:8501"
-          ],
-          "path": [
-            "text2image.Text2ImageService",
-            "GenerateImage"
-          ]
-        },
-        "body": {
-          "mode": "grpc",
-          "grpc": {
-            "message": {
-              "prompt": "a futuristic city with flying cars",
-              "context": "sunset, neon lights, sci-fi",
-              "num_inference_steps": 30,
-              "guidance_scale": 8.0
-            }
-          }
-        }
-      }
+    "info": {
+      "name": "Text2Image gRPC Tests",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
     },
-    {
-      "name": "Natural Landscape",
-      "protocolProfileBehavior": {},
-      "request": {
-        "method": "GRPC",
-        "url": {
-          "raw": "grpc://localhost:8501/text2image.Text2ImageService/GenerateImage",
-          "host": [
-            "localhost:8501"
-          ],
-          "path": [
-            "text2image.Text2ImageService",
-            "GenerateImage"
-          ]
-        },
-        "body": {
-          "mode": "grpc",
-          "grpc": {
-            "message": {
-              "prompt": "a peaceful forest with a waterfall",
-              "context": "morning mist, birds, calm atmosphere",
-              "num_inference_steps": 40,
-              "guidance_scale": 7.0
-            }
-          }
+    "item": [
+      {
+        "name": "Basic futuristic city prompt",
+        "request": {
+          "url": "grpc://127.0.0.1:8501",
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "{\n    \"prompt\": \"a futuristic city with flying cars\",\n    \"context\": \"sunset, neon lights, sci-fi\",\n    \"num_inference_steps\": 50,\n    \"guidance_scale\": 8.0\n}"
+          },
+          "description": "Generates a futuristic city image."
+        }
+      },
+      {
+        "name": "Cyberpunk alley test",
+        "request": {
+          "url": "grpc://127.0.0.1:8501",
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "{\n    \"prompt\": \"a cyberpunk alley with glowing billboards\",\n    \"context\": \"rainy night, dystopia, neon colors\",\n    \"num_inference_steps\": 40,\n    \"guidance_scale\": 9.0\n}"
+          },
+          "description": "Tests cyberpunk alley prompt."
+        }
+      },
+      {
+        "name": "Fantasy forest castle",
+        "request": {
+          "url": "grpc://127.0.0.1:8501",
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"prompt\": \"a castle in an enchanted forest\",\n  \"context\": \"misty morning, glowing mushrooms, magical\",\n  \"num_inference_steps\": 65,\n  \"guidance_scale\": 8.5\n}"
+          },
+          "description": "Enchanted castle setting."
+        }
+      },
+      {
+        "name": "Underwater cityscape",
+        "request": {
+          "url": "grpc://127.0.0.1:8501",
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"prompt\": \"an underwater city with sea creatures\",\n  \"context\": \"bioluminescent lights, coral buildings\",\n  \"num_inference_steps\": 80,\n  \"guidance_scale\": 7.5\n}"
+          },
+          "description": "Aquatic-themed architecture."
+        }
+      },
+      {
+        "name": "Martian colony base",
+        "request": {
+          "url": "grpc://127.0.0.1:8501",
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"prompt\": \"a colony base on Mars\",\n  \"context\": \"red desert, futuristic tech, domes\",\n  \"num_inference_steps\": 78,\n  \"guidance_scale\": 8.2\n}"
+          },
+          "description": "Space exploration setup."
+        }
+      },
+      {
+        "name": "Steampunk airship battle",
+        "request": {
+          "url": "grpc://127.0.0.1:8501",
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"prompt\": \"steampunk airships engaged in battle\",\n  \"context\": \"smoke, brass, cloudy sky\",\n  \"num_inference_steps\": 68,\n  \"guidance_scale\": 9.0\n}"
+          },
+          "description": "Steampunk action scene."
+        }
+      },
+      {
+        "name": "Post-apocalyptic wasteland",
+        "request": {
+          "url": "grpc://127.0.0.1:8501",
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"prompt\": \"a post-apocalyptic wasteland with ruins\",\n  \"context\": \"dust storm, abandoned vehicles, survival\",\n  \"num_inference_steps\": 76,\n  \"guidance_scale\": 8.8\n}"
+          },
+          "description": "Wasteland environment."
+        }
+      },
+      {
+        "name": "High fantasy dragon fight",
+        "request": {
+          "url": "grpc://127.0.0.1:8501",
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"prompt\": \"a knight battling a dragon on a cliff\",\n  \"context\": \"stormy sky, lightning, epic scale\",\n  \"num_inference_steps\": 85,\n  \"guidance_scale\": 9.2\n}"
+          },
+          "description": "Epic fantasy duel."
+        }
+      },
+      {
+        "name": "Ancient Egyptian space gods",
+        "request": {
+          "url": "grpc://127.0.0.1:8501",
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"prompt\": \"ancient Egyptian kings arriving from spaceships\",\n  \"context\": \"desert, pyramids, cosmic aura\",\n  \"num_inference_steps\": 63,\n  \"guidance_scale\": 8.3\n}"
+          },
+          "description": "Myth meets sci-fi."
+        }
+      },
+      {
+        "name": "Alien marketplace at dusk",
+        "request": {
+          "url": "grpc://127.0.0.1:8501",
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"prompt\": \"a busy alien marketplace on another planet\",\n  \"context\": \"dusk, glowing stalls, diverse species\",\n  \"num_inference_steps\": 79,\n  \"guidance_scale\": 7.9\n}"
+          },
+          "description": "Colorful and vibrant market scene."
         }
       }
-    },
-    {
-      "name": "Fantasy Creature",
-      "protocolProfileBehavior": {},
-      "request": {
-        "method": "GRPC",
-        "url": {
-          "raw": "grpc://localhost:8501/text2image.Text2ImageService/GenerateImage",
-          "host": [
-            "localhost:8501"
-          ],
-          "path": [
-            "text2image.Text2ImageService",
-            "GenerateImage"
-          ]
-        },
-        "body": {
-          "mode": "grpc",
-          "grpc": {
-            "message": {
-              "prompt": "a dragon flying over mountains",
-              "context": "sunset, fantasy, clouds",
-              "num_inference_steps": 35,
-              "guidance_scale": 8.5
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Abstract Art",
-      "protocolProfileBehavior": {},
-      "request": {
-        "method": "GRPC",
-        "url": {
-          "raw": "grpc://localhost:8501/text2image.Text2ImageService/GenerateImage",
-          "host": [
-            "localhost:8501"
-          ],
-          "path": [
-            "text2image.Text2ImageService",
-            "GenerateImage"
-          ]
-        },
-        "body": {
-          "mode": "grpc",
-          "grpc": {
-            "message": {
-              "prompt": "an abstract explosion of colors",
-              "context": "modern art, chaotic, surreal",
-              "num_inference_steps": 25,
-              "guidance_scale": 10.0
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Realistic Portrait",
-      "protocolProfileBehavior": {},
-      "request": {
-        "method": "GRPC",
-        "url": {
-          "raw": "grpc://localhost:8501/text2image.Text2ImageService/GenerateImage",
-          "host": [
-            "localhost:8501"
-          ],
-          "path": [
-            "text2image.Text2ImageService",
-            "GenerateImage"
-          ]
-        },
-        "body": {
-          "mode": "grpc",
-          "grpc": {
-            "message": {
-              "prompt": "a close-up portrait of a woman",
-              "context": "realistic lighting, bokeh background",
-              "num_inference_steps": 50,
-              "guidance_scale": 6.5
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "Low Steps Edge Case",
-      "protocolProfileBehavior": {},
-      "request": {
-        "method": "GRPC",
-        "url": {
-          "raw": "grpc://localhost:8501/text2image.Text2ImageService/GenerateImage",
-          "host": [
-            "localhost:8501"
-          ],
-          "path": [
-            "text2image.Text2ImageService",
-            "GenerateImage"
-          ]
-        },
-        "body": {
-          "mode": "grpc",
-          "grpc": {
-            "message": {
-              "prompt": "a night sky with stars and a moon",
-              "context": "minimalist, dark palette",
-              "num_inference_steps": 5,
-              "guidance_scale": 7.0
-            }
-          }
-        }
-      }
-    },
-    {
-      "name": "High Guidance Scale",
-      "protocolProfileBehavior": {},
-      "request": {
-        "method": "GRPC",
-        "url": {
-          "raw": "grpc://localhost:8501/text2image.Text2ImageService/GenerateImage",
-          "host": [
-            "localhost:8501"
-          ],
-          "path": [
-            "text2image.Text2ImageService",
-            "GenerateImage"
-          ]
-        },
-        "body": {
-          "mode": "grpc",
-          "grpc": {
-            "message": {
-              "prompt": "a cozy wooden cabin in the snow",
-              "context": "winter, pine trees, warm lights",
-              "num_inference_steps": 40,
-              "guidance_scale": 15.0
-            }
-          }
-        }
-      }
-    }
-  ]
-}
+    ]
+  }
+  

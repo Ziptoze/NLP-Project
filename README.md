@@ -208,5 +208,6 @@ For bugs, issues, or suggestions, open an issue or email `your.email@example.com
 ## 🖼️ Preview
  
 *For preview: Check out the Outputs folder*
+- demo link: https://drive.google.com/file/d/1yZtVWupB4RPsz39amvN7PdxZdHwsmzcL/view?usp=sharing
 
 ---
