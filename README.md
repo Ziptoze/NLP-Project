@@ -39,6 +39,35 @@ Transcribe to text using Whisper model from OpenAI
 - 🌍 Image Translation
 Translate multilingual text in images using Seamless M4T
 
+---
+
+## 🎥 Video Preview
+
+[![Video Preview](https://drive.google.com/thumbnail?id=1gpLiZnFUztX-xywhFI5sv_fOk9-eMSfp&sz=w640-h480)](https://drive.google.com/file/d/1gpLiZnFUztX-xywhFI5sv_fOk9-eMSfp/preview)
+
+*Click on the image above to watch the demo video*
+
+---
+
+## 📸 Screenshots
+
+### Results Comparison
+![Results Comparison](screenshots/results%20comparison.png)
+
+### Results Prompt
+![Results Prompt](screenshots/results%20prompt.png)
+
+### Stylized Apocalypse
+![Stylized Apocalypse](screenshots/stylized_apocalypse.png)
+
+### Stylized City on Mars
+![Stylized City on Mars](screenshots/stylized_city%20on%20mars.png)
+
+### Stylized Cyberpunk Street
+![Stylized Cyberpunk Street](screenshots/stylized%20cyberpunk%20street.png)
+
+---
+
 ## 🔧 Setup Instructions
 
 ### 1. Clone the Repository
